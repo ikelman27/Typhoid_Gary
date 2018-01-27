@@ -20,7 +20,7 @@ public class CoughScript : MonoBehaviour {
     {
         timeStamp = Time.time;
         cough.transform.position = transform.position;
-        cough.transform.rotation =Quaternion.ro
+        //cough.transform.rotation =Quaternion.ro
 
         cough.Play();
 
