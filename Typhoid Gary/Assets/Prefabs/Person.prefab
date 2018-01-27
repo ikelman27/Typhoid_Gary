@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114606084486003548}
   - component: {fileID: 195388359274764140}
   - component: {fileID: 114703967880539130}
+  - component: {fileID: 136218551976755500}
   m_Layer: 0
   m_Name: Person
   m_TagString: Enemy
@@ -119,6 +120,19 @@ MonoBehaviour:
   infectedMaterial: {fileID: 0}
   diseaseBubbles: {fileID: 1318428906096698, guid: 061985e4cc8e2fb41aa99f8dc598f932,
     type: 2}
+--- !u!136 &136218551976755500
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903395497840070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136714786238429346
 CapsuleCollider:
   m_ObjectHideFlags: 1

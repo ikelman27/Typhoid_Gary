@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 136514865821123532}
   - component: {fileID: 23192725511594952}
   - component: {fileID: 114631259427276194}
+  - component: {fileID: 136307604277761208}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: SickPoint
@@ -212,6 +213,19 @@ MonoBehaviour:
   isInfected: 0
   infectedMaterial: {fileID: 0}
   diseaseBubbles: {fileID: 0}
+--- !u!136 &136307604277761208
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1589038474373706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.50000024
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604666, y: 0, z: -0.00000008940699}
 --- !u!136 &136514865821123532
 CapsuleCollider:
   m_ObjectHideFlags: 1
