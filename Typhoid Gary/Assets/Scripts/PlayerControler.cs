@@ -16,6 +16,10 @@ public class PlayerControler : MonoBehaviour
     Vector3 snotDir;
     public float snezeCooldownTime;
     float snezeTimeStamp;
+     float coughTimeStamp;
+    public float coughCooldownTime;
+ 
+    public GameObject coughCone;
     #endregion
 
 
@@ -26,6 +30,7 @@ public class PlayerControler : MonoBehaviour
         position = player.transform.position;
         snot.SetActive(false);
         snezeTimeStamp = snezeCooldownTime + Time.time;
+
     }
 
 
@@ -72,7 +77,11 @@ public class PlayerControler : MonoBehaviour
         }
 
 
-        movePlayer();
+        if (coughTimeStamp > Time.time)
+        {
+            //coughCone.SetActive(false);
+        }
+            movePlayer();
     }
 
 
@@ -80,12 +89,6 @@ public class PlayerControler : MonoBehaviour
     {
         player.transform.rotation = Quaternion.Euler(new Vector3(0f, -angle, 0f));
         player.transform.position = position;
-
-        if (snot.activeInHierarchy)
-        {
-            snot.transform.position += snotDir / 10;
-        }
-
     }
 
 
@@ -96,13 +99,19 @@ public class PlayerControler : MonoBehaviour
         {
             snot.transform.position = player.transform.position;
             snot.SetActive(true);
-            snotDir = -player.transform.right;
+            snot.GetComponent<Snot>().fireSnot(-player.transform.right);
             snezeTimeStamp = snezeCooldownTime + Time.time;
         }
     }
 
     void cough()
     {
+        if(coughTimeStamp <= Time.time)
+        {
 
+            coughCone.SetActive(true);
+            coughTimeStamp = coughCooldownTime + Time.time;
+        }
+        
     }
 }
