@@ -21,6 +21,8 @@ public class SensoryScript : MonoBehaviour {
 
     GameObject target;
 
+    public string tag;
+
     // Use this for initialization
     void Start () {
         GameObject[] sensors = GameObject.FindGameObjectsWithTag("Sensor");
@@ -28,7 +30,7 @@ public class SensoryScript : MonoBehaviour {
         {
             s.GetComponent<Renderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
         }
-        target = GameObject.FindGameObjectWithTag("Player");
+        target = GameObject.FindGameObjectWithTag(tag);
 	}
 	
     bool Hearing
