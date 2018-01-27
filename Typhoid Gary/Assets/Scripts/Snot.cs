@@ -38,4 +38,15 @@ public class Snot : MonoBehaviour {
         currentDist = 0;
         snotDir = direction;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+       
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Object")
+        {
+            other.GetComponent<InfectScript>().infect();
+        }
+        if(other.gameObject.name != "Player")
+            gameObject.SetActive(false);
+    }
 }

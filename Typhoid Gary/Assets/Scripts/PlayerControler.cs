@@ -18,7 +18,7 @@ public class PlayerControler : MonoBehaviour
     float snezeTimeStamp;
      float coughTimeStamp;
     public float coughCooldownTime;
- 
+
     public GameObject coughCone;
     #endregion
 
@@ -26,6 +26,7 @@ public class PlayerControler : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //find the 
         player = GameObject.Find("Player");
         position = player.transform.position;
         snot.SetActive(false);

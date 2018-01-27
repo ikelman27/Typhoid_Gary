@@ -19,8 +19,13 @@ public class CoughScript : MonoBehaviour {
     private void OnEnable()
     {
         timeStamp = Time.time;
-        cough.transform.position = transform.position;
-        //cough.transform.rotation =Quaternion.ro
+
+        cough.transform.position =player.transform.position;
+
+        cough.transform.rotation = player.transform.rotation*Quaternion.Euler(0, -90, 90);
+
+
+        
 
         cough.Play();
 
@@ -35,11 +40,11 @@ public class CoughScript : MonoBehaviour {
         }
 	}
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Object")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Object")
         {
-            Debug.Log(collision.gameObject.name);
+            other.GetComponent<InfectScript>().infect();
         }
     }
 }
