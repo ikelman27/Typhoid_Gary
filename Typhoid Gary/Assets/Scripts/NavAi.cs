@@ -58,6 +58,13 @@ public class NavAi : MonoBehaviour {
     {
         if (reachedTarget == true)
         {
+            if (!gameObject.GetComponent<InfectScript>().isInfected && target.GetComponent<InfectScript>() != null)
+            {
+                if (target.GetComponent<InfectScript>().isInfected)
+                {
+                    gameObject.GetComponent<InfectScript>().infectPerson();
+                }
+            }
             randPause -= 1.0f * Time.deltaTime;
   
             if (randPause <= 0)

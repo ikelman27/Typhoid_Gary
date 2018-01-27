@@ -24,9 +24,10 @@ GameObject:
   - component: {fileID: 23301736210900530}
   - component: {fileID: 114606084486003548}
   - component: {fileID: 195388359274764140}
+  - component: {fileID: 114703967880539130}
   m_Layer: 0
   m_Name: Person
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,6 +104,21 @@ MonoBehaviour:
   isBoss: 0
   wanderRad: 0
   wanderTimer: 0
+--- !u!114 &114703967880539130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903395497840070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 631545006e570a043b1989f7fa69d0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInfected: 0
+  infectedMaterial: {fileID: 0}
+  diseaseBubbles: {fileID: 1318428906096698, guid: 061985e4cc8e2fb41aa99f8dc598f932,
+    type: 2}
 --- !u!136 &136714786238429346
 CapsuleCollider:
   m_ObjectHideFlags: 1
