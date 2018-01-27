@@ -72,7 +72,6 @@ public class NavAi : MonoBehaviour {
     public void PickNewItem()
     {
         int rand = Random.Range(0, moveToTargets.Count);
-        Debug.Log(rand);
         target = moveToTargets[rand];
         float pausingBase = 0.0f;
         pausingBase = Random.Range(randMin, randMax);
