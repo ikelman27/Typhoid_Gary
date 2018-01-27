@@ -52,9 +52,9 @@ public class ChangingBar : MonoBehaviour {
 		
 	}
 
-    public void IncreaseSuspicion()
+    public void IncreaseSuspicion(float valueIncrease)
     {
-        currVal += increaseVal;
+        currVal += valueIncrease;
         barVal.transform.localScale = new Vector3((currVal / totalBar), 1, 1);
     }
     public void ActivatCoughCD()
