@@ -9,18 +9,18 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1694591862657446}
+  m_RootGameObject: {fileID: 1607471289067734}
   m_IsPrefabParent: 1
---- !u!1 &1694591862657446
+--- !u!1 &1607471289067734
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4216261738613498}
-  - component: {fileID: 198172060912114204}
-  - component: {fileID: 199536482033441914}
+  - component: {fileID: 4412074927782162}
+  - component: {fileID: 198951654449523228}
+  - component: {fileID: 199815822197797766}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -28,25 +28,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4216261738613498
+--- !u!4 &4412074927782162
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1694591862657446}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0.42152178, y: 6.13, z: -5.35}
+  m_GameObject: {fileID: 1607471289067734}
+  m_LocalRotation: {x: 0.4956325, y: 0.4956325, z: 0.50432974, w: 0.50432974}
+  m_LocalPosition: {x: -49.53505, y: 1.19, z: -15.429999}
   m_LocalScale: {x: 0.43856773, y: 0.43856657, z: 1.2168126}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 90}
---- !u!198 &198172060912114204
+--- !u!198 &198951654449523228
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1694591862657446}
+  m_GameObject: {fileID: 1607471289067734}
   serializedVersion: 5
   lengthInSec: 0.1
   simulationSpeed: 1
@@ -101,7 +101,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1612575623
+  randomSeed: -703698474
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3402,13 +3402,13 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!199 &199536482033441914
+--- !u!199 &199815822197797766
 ParticleSystemRenderer:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1694591862657446}
+  m_GameObject: {fileID: 1607471289067734}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
