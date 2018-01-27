@@ -41,7 +41,7 @@ public class CoughScript : MonoBehaviour {
     {
         if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Object")
         {
-            Debug.Log(other.gameObject.name);
+            other.GetComponent<InfectScript>().infect();
         }
     }
 }
