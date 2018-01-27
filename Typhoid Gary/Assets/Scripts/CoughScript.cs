@@ -42,9 +42,13 @@ public class CoughScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Object")
+        if (other.gameObject.tag == "Enemy")
         {
-            other.GetComponent<InfectScript>().infect();
+            other.GetComponent<InfectScript>().infectPerson();
+        }
+        if(other.gameObject.tag == "SickPoint")
+        {
+            other.GetComponent<InfectScript>().infectObject();
         }
     }
 }

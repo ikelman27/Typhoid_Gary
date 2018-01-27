@@ -5,7 +5,7 @@ using UnityEngine;
 public class InfectScript : MonoBehaviour {
     public bool isInfected;
     public Material infectedMaterial;
-
+    public  GameObject diseaseBubbles;
 	// Use this for initialization
 	void Start () {
 		
@@ -16,13 +16,21 @@ public class InfectScript : MonoBehaviour {
 		
 	}
 
-    public void infect()
+    public void infectPerson()
+    {
+        isInfected = true;
+       GameObject newDisease = Instantiate(diseaseBubbles, transform.position, Quaternion.identity);
+        newDisease.transform.SetParent(gameObject.transform);
+       
+    }
+
+   public void infectObject()
     {
         isInfected = true;
         gameObject.GetComponent<Renderer>().material.color = Color.green;
     }
 
-     public bool getInfected()
+    public bool getInfected()
     {
         return isInfected;
     }
