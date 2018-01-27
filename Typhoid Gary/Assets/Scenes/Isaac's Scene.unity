@@ -3683,6 +3683,7 @@ GameObject:
   - component: {fileID: 202680234}
   - component: {fileID: 202680233}
   - component: {fileID: 202680232}
+  - component: {fileID: 202680236}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -3756,6 +3757,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &202680236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 202680231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 631545006e570a043b1989f7fa69d0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInfected: 0
+  infectedMaterial: {fileID: 0}
 --- !u!1001 &1037905548
 Prefab:
   m_ObjectHideFlags: 0
@@ -3817,7 +3831,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: bfdbae3e9d7388e43b217b16ecc2eddd, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: bfdbae3e9d7388e43b217b16ecc2eddd, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4206,7 +4220,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2020742224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.95401716, y: 6, z: -5.29}
+  m_LocalPosition: {x: -4.24, y: 6, z: 1.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1579417264}

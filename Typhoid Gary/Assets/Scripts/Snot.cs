@@ -44,7 +44,9 @@ public class Snot : MonoBehaviour {
        
         if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Object")
         {
-            Debug.Log(other.gameObject.name);
+            other.GetComponent<InfectScript>().infect();
         }
+        if(other.gameObject.name != "Player")
+            gameObject.SetActive(false);
     }
 }
