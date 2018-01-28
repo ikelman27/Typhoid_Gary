@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 public class NavAi : MonoBehaviour {
 
     public List<GameObject> moveToTargets;
@@ -63,6 +64,13 @@ public class NavAi : MonoBehaviour {
                 if (target.GetComponent<InfectScript>().isInfected)
                 {
                     gameObject.GetComponent<InfectScript>().infectPerson();
+                }
+            }
+            if(SceneManager.GetActiveScene().name == "PuzzleScene")
+            {
+                if(gameObject.GetComponent<InfectScript>().isInfected && target.GetComponent<InfectScript>() != null)
+                {
+                    target.GetComponent<InfectScript>().infectObject();
                 }
             }
             randPause -= 1.0f * Time.deltaTime;
