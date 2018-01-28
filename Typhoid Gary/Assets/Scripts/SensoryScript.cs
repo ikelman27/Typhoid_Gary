@@ -67,11 +67,11 @@ public class SensoryScript : MonoBehaviour {
                     if (isHearing)
                     {
                         if (personType == 0)
-                            penalty = 5;
+                            penalty = 10;
                         else if (personType == 1)
-                            penalty = 10;
+                            penalty = 15;
                         else
-                            penalty = 10;
+                            penalty = 20;
                     }
                     else
                     {
@@ -89,18 +89,18 @@ public class SensoryScript : MonoBehaviour {
                     if (isHearing)
                     {
                         if (personType == 0)
-                            penalty = 2;
-                        else if (personType == 1)
-                            penalty = 8;
-                        else
                             penalty = 10;
+                        else if (personType == 1)
+                            penalty = 15;
+                        else
+                            penalty = 20;
                     }
                     else
                     {
                         if (personType == 0)
-                            penalty = 10;
+                            penalty = 15;
                         else if (personType == 1)
-                            penalty = 25;
+                            penalty = 30;
                         else
                             penalty = 50;
                     }
