@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4370936, g: 0.4848051, b: 0.5650713, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1630,15 +1630,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4412074927782162, guid: 1ad961009c615f04088d6822d6d126a1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.867533
+      value: 5.13
       objectReference: {fileID: 0}
     - target: {fileID: 4412074927782162, guid: 1ad961009c615f04088d6822d6d126a1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.0099963
+      value: -1.01
       objectReference: {fileID: 0}
     - target: {fileID: 4412074927782162, guid: 1ad961009c615f04088d6822d6d126a1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -18.8096
+      value: -34.05
       objectReference: {fileID: 0}
     - target: {fileID: 4412074927782162, guid: 1ad961009c615f04088d6822d6d126a1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7393,7 +7393,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1358513237576770, guid: 836611b2e21a3e546b973dcc7501b615, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4543524514622232, guid: 836611b2e21a3e546b973dcc7501b615, type: 2}
       propertyPath: m_LocalScale.x
@@ -9191,7 +9191,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4091909061159614, guid: b0c9410ab1e34384484dbfe5238590c1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -18.278097
+      value: -34.24
       objectReference: {fileID: 0}
     - target: {fileID: 4091909061159614, guid: b0c9410ab1e34384484dbfe5238590c1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9215,7 +9215,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1903645570841144, guid: b0c9410ab1e34384484dbfe5238590c1, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1903645570841144, guid: b0c9410ab1e34384484dbfe5238590c1, type: 2}
       propertyPath: m_TagString
