@@ -50,7 +50,7 @@ public class NavAi : MonoBehaviour {
         if(reachedTarget==false)
         {
             agent.destination = target.transform.position;
-            Debug.Log("target:" + target);
+            //Debug.Log("target:" + target);
         }
     }
 

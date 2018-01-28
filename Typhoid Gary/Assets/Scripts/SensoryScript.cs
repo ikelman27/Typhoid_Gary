@@ -53,4 +53,28 @@ public class SensoryScript : MonoBehaviour {
         }
 
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag != "Untagged")
+        {
+            Debug.Log(transform.parent.name + " senses " + other.tag + "(" + other.name + ")");
+            if (other.tag == "Enemy")
+                Debug.Log(transform.parent.name + " IS TOUCHING " + other.name + " AND IS TRIGGERED REEE");
+        }
+        if(other.tag == "Infection")
+        {
+            Debug.Log("GROSS");
+            if (isHearing)
+                hearing = true;
+            else
+                seeing = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        hearing = false;
+        seeing = false;
+    }
 }
