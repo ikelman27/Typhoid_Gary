@@ -17,6 +17,10 @@ public class SensoryScript : MonoBehaviour {
 
     public int personType = 0;      // For determining penalties -> 0 = normal person, 1 = executive, 2+ = boss
 
+    // Audio
+    public AudioClip[] clips;
+    public AudioSource reactionSound;
+
     // Use this for initialization
     void Start () {
         // Turns everything invisible upon startup
@@ -36,15 +40,31 @@ public class SensoryScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        RaycastHit ray;
+        float dist = (transform.position - target.transform.position).sqrMagnitude;
+        if (dist < (transform.localScale.x / 2))
+        {
+            playerInRange = true;
+        }
+        else
+            playerInRange = false;
 
+        Debug.Log("RANGE: " + name + " " + playerInRange);
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("TRIGGERED");
         if (other.tag == "Infection")
         {
             if (playerInRange)
             {
+                if (clips.Length > 0)
+                {
+                    int i = Random.Range(0, clips.Length);
+                    reactionSound.PlayOneShot(clips[i]);
+                    Debug.Log("SOUND");
+                }
                 int penalty = 0;
                 // If it's sneezing
                 if (other.gameObject.name == "Snot")
@@ -100,6 +120,10 @@ public class SensoryScript : MonoBehaviour {
     {
         if (other.tag == "Player")
             playerInRange = true;
+        if (playerInRange)
+        {
+            Debug.Log("IN RANGE");
+        }
     }
 
     private void OnTriggerExit(Collider other)
