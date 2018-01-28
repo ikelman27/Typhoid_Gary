@@ -1055,6 +1055,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4706147716505672, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1290,6 +1295,11 @@ Prefab:
       propertyPath: moveToTargets.Array.data[4]
       value: 
       objectReference: {fileID: 1198641293}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -1387,6 +1397,11 @@ Prefab:
       propertyPath: moveToTargets.Array.data[3]
       value: 
       objectReference: {fileID: 498312645}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -1490,6 +1505,11 @@ Prefab:
       propertyPath: moveToTargets.Array.data[5]
       value: 
       objectReference: {fileID: 381631031}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -1609,6 +1629,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1607471289067734, guid: 1ad961009c615f04088d6822d6d126a1, type: 2}
+      propertyPath: m_TagString
+      value: Infection
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ad961009c615f04088d6822d6d126a1, type: 2}
   m_IsPrefabParent: 0
@@ -1706,6 +1730,11 @@ Prefab:
       propertyPath: moveToTargets.Array.data[5]
       value: 
       objectReference: {fileID: 1492166421}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -1882,6 +1911,11 @@ Prefab:
       propertyPath: moveToTargets.Array.data[3]
       value: 
       objectReference: {fileID: 206313978}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -3011,6 +3045,11 @@ Prefab:
       propertyPath: moveToTargets.Array.data[3]
       value: 
       objectReference: {fileID: 1185335263}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -4169,6 +4208,11 @@ Prefab:
       propertyPath: moveToTargets.Array.data[5]
       value: 
       objectReference: {fileID: 187856198}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -4735,6 +4779,11 @@ Prefab:
       propertyPath: m_Name
       value: Person_Sensor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -4831,6 +4880,11 @@ Prefab:
     - target: {fileID: 1112205313813342, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_Name
       value: Person_Sensor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
@@ -5153,6 +5207,11 @@ Prefab:
       propertyPath: m_Name
       value: Person_Sensor (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -5432,6 +5491,11 @@ Prefab:
     - target: {fileID: 1112205313813342, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_Name
       value: Person_Sensor (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
@@ -6869,6 +6933,11 @@ Prefab:
       propertyPath: m_Name
       value: Person_Sensor (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -7120,6 +7189,11 @@ Prefab:
       propertyPath: m_Name
       value: Person_Sensor (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -7305,6 +7379,11 @@ Prefab:
     - target: {fileID: 4543524514622232, guid: 836611b2e21a3e546b973dcc7501b615, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 65531983907031902, guid: 836611b2e21a3e546b973dcc7501b615,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 836611b2e21a3e546b973dcc7501b615, type: 2}
@@ -9068,7 +9147,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1903645570841144, guid: b0c9410ab1e34384484dbfe5238590c1, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903645570841144, guid: b0c9410ab1e34384484dbfe5238590c1, type: 2}
+      propertyPath: m_TagString
+      value: Infection
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0c9410ab1e34384484dbfe5238590c1, type: 2}
@@ -9351,6 +9434,11 @@ Prefab:
       propertyPath: m_Name
       value: Person_Sensor (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
@@ -9598,7 +9686,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4824605211185636, guid: 4e1742862a7c57a428e995b2e7c2e6ff, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1903395497840070, guid: 4e1742862a7c57a428e995b2e7c2e6ff, type: 2}
       propertyPath: m_Name
@@ -10054,6 +10142,11 @@ Prefab:
       propertyPath: moveToTargets.Array.data[96]
       value: 
       objectReference: {fileID: 342861372}
+    - target: {fileID: 136714786238429346, guid: 4e1742862a7c57a428e995b2e7c2e6ff,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e1742862a7c57a428e995b2e7c2e6ff, type: 2}
   m_IsPrefabParent: 0
@@ -10264,7 +10357,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4706147716505672, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4706147716505672, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -10326,6 +10419,11 @@ Prefab:
     - target: {fileID: 1112205313813342, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_Name
       value: Person_Sensor (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
@@ -11257,7 +11355,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4706147716505672, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4706147716505672, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -11319,6 +11417,11 @@ Prefab:
     - target: {fileID: 1112205313813342, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_Name
       value: Person_Sensor (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
@@ -11982,7 +12085,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4706147716505672, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4706147716505672, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -12044,6 +12147,11 @@ Prefab:
     - target: {fileID: 1112205313813342, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_Name
       value: Person_Sensor (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
@@ -12336,7 +12444,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4706147716505672, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4706147716505672, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -12398,6 +12506,11 @@ Prefab:
     - target: {fileID: 1112205313813342, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_Name
       value: Person_Sensor (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
@@ -13394,7 +13507,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4706147716505672, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1112205313813342, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_Name
@@ -13437,6 +13550,11 @@ Prefab:
       propertyPath: moveToTargets.Array.data[3]
       value: 
       objectReference: {fileID: 1577491098}
+    - target: {fileID: 136351896040311812, guid: e48d2aa2361193c4d8799122253e0c6b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
   m_IsPrefabParent: 0
