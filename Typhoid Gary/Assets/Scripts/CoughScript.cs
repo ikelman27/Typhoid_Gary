@@ -19,7 +19,7 @@ public class CoughScript : MonoBehaviour {
     #endregion
     // Use this for initialization
     void Start () {
-
+        gameObject.SetActive(false);
     }
 
     private void OnEnable()
@@ -64,18 +64,21 @@ public class CoughScript : MonoBehaviour {
 
             //Debug.Log("Other: " + other.gameObject.name);
 
-            if (!Physics.Raycast(player.transform.position, other.transform.position - player.transform.position, out hit, Vector3.Magnitude(other.transform.position - player.transform.position)-other.GetComponent<CapsuleCollider>().radius ))
+            if (other.GetComponent<CapsuleCollider>())
             {
-                Debug.Log("TAG: " + other.gameObject.tag);
-                Debug.Log("NAME: " + other.gameObject.name);
-                Debug.Log("Found something with raycast");
-
-                if (other.gameObject.tag == "Enemy")
+                if (!Physics.Raycast(player.transform.position, other.transform.position - player.transform.position, out hit, Vector3.Magnitude(other.transform.position - player.transform.position) - other.GetComponent<CapsuleCollider>().radius))
                 {
-                    other.GetComponent<InfectScript>().infectPerson();
+                    /*Debug.Log("TAG: " + other.gameObject.tag);
+                    Debug.Log("NAME: " + other.gameObject.name);
+                    Debug.Log("Found something with raycast");*/
+
+                    if (other.gameObject.tag == "Enemy")
+                    {
+                        other.GetComponent<InfectScript>().infectPerson();
+                    }
                 }
+                //Debug.Log("HIT: " + hit.transform.gameObject.name);
             }
-            Debug.Log("HIT: " + hit.transform.gameObject.name);
         }
       
       

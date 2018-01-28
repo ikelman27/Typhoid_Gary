@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 135734702999822806}
   - component: {fileID: 23717486210547026}
   - component: {fileID: 114813367856135550}
+  - component: {fileID: 82696485696689236}
   m_Layer: 2
   m_Name: Hearing Sphere
   m_TagString: Sensor
@@ -235,6 +236,86 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1112205313813342}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &82696485696689236
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1310212426321266}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95232515774428214
 Animator:
   serializedVersion: 3
@@ -294,6 +375,8 @@ MonoBehaviour:
   isHearing: 0
   findTag: Player
   personType: 0
+  clips: []
+  reactionSound: {fileID: 0}
 --- !u!114 &114813367856135550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -309,6 +392,21 @@ MonoBehaviour:
   isHearing: 1
   findTag: Player
   personType: 0
+  clips:
+  - {fileID: 8300000, guid: ed52e2201dfc9994185ef742cc7f8e8e, type: 3}
+  - {fileID: 8300000, guid: 9376a09c143a424449e83da118fff035, type: 3}
+  - {fileID: 8300000, guid: 32ef1e9fcbca6af45b8ba60e62966ff4, type: 3}
+  - {fileID: 8300000, guid: af8e8b8b5e7c42349ad68e94f2c662c8, type: 3}
+  - {fileID: 8300000, guid: 4f666cb67269fa047a9d8a3323379a42, type: 3}
+  - {fileID: 8300000, guid: 1502f527dd1f18147aeb8eb88fa28f74, type: 3}
+  - {fileID: 8300000, guid: fd882fc1d9cd7614680cdfcc98722aa7, type: 3}
+  - {fileID: 8300000, guid: f2e22be702157184c8711a1d32521db3, type: 3}
+  - {fileID: 8300000, guid: 41295cd2fe18bfb4f9e9b72da3381a76, type: 3}
+  - {fileID: 8300000, guid: 0811b35b3c58a6946bead9ae6ee31e24, type: 3}
+  - {fileID: 8300000, guid: 6a533fed78fc03548ab693b615f19426, type: 3}
+  - {fileID: 8300000, guid: 4b1a47fc5cde718468c35237752c1995, type: 3}
+  - {fileID: 8300000, guid: 5d0519cbf1d056c459d12846084d47db, type: 3}
+  reactionSound: {fileID: 82696485696689236}
 --- !u!114 &114915705188723784
 MonoBehaviour:
   m_ObjectHideFlags: 1

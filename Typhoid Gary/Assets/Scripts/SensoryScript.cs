@@ -40,21 +40,17 @@ public class SensoryScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        RaycastHit ray;
         float dist = (transform.position - target.transform.position).sqrMagnitude;
-        if (dist < (transform.localScale.x / 2))
+        if (dist < (GetComponent<SphereCollider>().radius * 20))
         {
             playerInRange = true;
         }
         else
             playerInRange = false;
-
-        Debug.Log("RANGE: " + name + " " + playerInRange);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("TRIGGERED");
         if (other.tag == "Infection")
         {
             if (playerInRange)
@@ -63,7 +59,6 @@ public class SensoryScript : MonoBehaviour {
                 {
                     int i = Random.Range(0, clips.Length);
                     reactionSound.PlayOneShot(clips[i]);
-                    Debug.Log("SOUND");
                 }
                 int penalty = 0;
                 // If it's sneezing
@@ -113,16 +108,6 @@ public class SensoryScript : MonoBehaviour {
                 manager.GetComponent<ChangingBar>().IncreaseSuspicion(penalty);
             }
 
-        }
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Player")
-            playerInRange = true;
-        if (playerInRange)
-        {
-            Debug.Log("IN RANGE");
         }
     }
 
