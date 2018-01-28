@@ -32,7 +32,7 @@ public class PlayerControler : MonoBehaviour
     void Start()
     {
         //find the 
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         position = player.transform.position;
         snot.SetActive(false);
         snezeTimeStamp = snezeCooldownTime + Time.time;
@@ -91,6 +91,7 @@ public class PlayerControler : MonoBehaviour
 
         movePlayer();
         //position = transform.position;
+
     }
 
 

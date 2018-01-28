@@ -41,17 +41,20 @@ public class Snot : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == 0)
+        if(other.gameObject.layer == 0 || other.gameObject.layer == 2)
+        {
+            if (other.gameObject.tag == "SickPoint")
+            {
+                other.GetComponent<InfectScript>().infectObject();
+            }
+        }
+        else if (other.gameObject.layer == 1)
         {
             if (other.gameObject.tag == "Enemy")
             {
                 other.GetComponent<InfectScript>().infectPerson();
             }
-            if (other.gameObject.tag == "SickPoint")
-            {
-                other.GetComponent<InfectScript>().infectObject();
-            }
-            if (other.gameObject.name != "Player")
+            if (other.gameObject.tag != "Player")
                 gameObject.SetActive(false);
         }
     }

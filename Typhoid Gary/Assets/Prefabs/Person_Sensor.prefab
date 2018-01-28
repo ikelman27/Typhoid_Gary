@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114285138232468992}
   - component: {fileID: 195817048258988692}
   - component: {fileID: 114915705188723784}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Person_Sensor
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 135734702999822806}
   - component: {fileID: 23717486210547026}
   - component: {fileID: 114813367856135550}
-  m_Layer: 1
+  m_Layer: 2
   m_Name: Hearing Sphere
   m_TagString: Sensor
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 95232515774428214}
   - component: {fileID: 135877833264636216}
   - component: {fileID: 114771376802784468}
-  m_Layer: 1
+  m_Layer: 2
   m_Name: Vision Cone
   m_TagString: Sensor
   m_Icon: {fileID: 0}

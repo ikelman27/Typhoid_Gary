@@ -56,6 +56,7 @@ public class ChangingBar : MonoBehaviour {
     {
         currVal += valueIncrease;
         barVal.transform.localScale = new Vector3((currVal / totalBar), 1, 1);
+        Debug.Log("SUSPICION UP");
     }
     public void ActivatCoughCD()
     {
