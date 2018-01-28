@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198951654449523228}
   - component: {fileID: 199815822197797766}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Cough Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2449,7 +2449,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
     type: 0
     collisionMode: 0

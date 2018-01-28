@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33686769003680272}
   - component: {fileID: 65147635448574118}
   - component: {fileID: 23025457216406054}
+  - component: {fileID: 65309359119921758}
   m_Layer: 0
   m_Name: Table
   m_TagString: SickPoint
@@ -94,4 +95,16 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65309359119921758
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1528869404629270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 1, z: 1.0000002}
   m_Center: {x: 0, y: 0, z: 0}
