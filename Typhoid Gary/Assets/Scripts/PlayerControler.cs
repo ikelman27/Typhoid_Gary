@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerControler : MonoBehaviour
 {
 
-    #region variables
+    #region ContorlerVariables
     public float speed = 5;
     private Vector3 position;
     private GameObject player;
@@ -20,6 +20,11 @@ public class PlayerControler : MonoBehaviour
     public float coughCooldownTime;
     private Rigidbody rigid;
     public GameObject coughCone;
+    #endregion
+
+    #region enemyDectVars
+    public GameObject box;
+    public bool clicked;
     #endregion
 
 
@@ -139,5 +144,31 @@ public class PlayerControler : MonoBehaviour
             coughTimeStamp = coughCooldownTime + Time.time;
         }
         
+    }
+
+
+    // If an event happens within the trigger area, the senses are activated
+    private void OnTriggerStay(Collider collision)
+    {
+        if (collision.gameObject.tag == "Sensor")
+        {
+            if (clicked)
+            {
+                if (collision.gameObject.GetComponent<SensoryScript>().isHearing)
+                    collision.gameObject.GetComponent<SensoryScript>().Hearing = true;
+                else
+                    collision.gameObject.GetComponent<SensoryScript>().Seeing = true;
+            }
+        }
+    }
+
+    // Senses are disabled upon leaving trigger area
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.tag == "Sensor")
+        {
+            collision.gameObject.GetComponent<SensoryScript>().Hearing = false;
+            collision.gameObject.GetComponent<SensoryScript>().Seeing = false;
+        }
     }
 }
