@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class ChangingBar : MonoBehaviour {
 
     //stuff relating to the cooldownbar
@@ -9,7 +10,7 @@ public class ChangingBar : MonoBehaviour {
     private float currVal = 0;//the current value 
     public GameObject barVal;//the actual changing bar object
     public float increaseVal;
-
+    public GameObject[] enemies;
 
     //cooldown display
     //the images for the acts
@@ -27,6 +28,7 @@ public class ChangingBar : MonoBehaviour {
 	void Start () {
         sneezeIsCD = false;
         coughIsCD = false;
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
 	}
 	
 	// Update is called once per frame
@@ -49,6 +51,16 @@ public class ChangingBar : MonoBehaviour {
                 sneezeIsCD = false;
             }
         }
+
+        if (winGame())
+        {
+            //SceneManager.LoadScene(1);
+            Debug.Log("you win");
+        }
+        if(currVal >= 100)
+        {
+            Debug.Log("you Lose");
+        }
 		
 	}
 
@@ -56,7 +68,6 @@ public class ChangingBar : MonoBehaviour {
     {
         currVal += valueIncrease;
         barVal.transform.localScale = new Vector3((currVal / totalBar), 1, 1);
-        Debug.Log("SUSPICION UP");
     }
     public void ActivatCoughCD()
     {
@@ -67,6 +78,17 @@ public class ChangingBar : MonoBehaviour {
     {
         sneezImg.fillAmount = 0;
         sneezeIsCD = true;
+    }
+
+    bool winGame()
+    {
+
+        for(int i = 0; i < enemies.Length; i++)
+        {
+            if (!enemies[i].GetComponent<InfectScript>().isInfected)
+                return false;        
+        }
+        return true;
     }
 }
 
