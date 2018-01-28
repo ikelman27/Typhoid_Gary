@@ -11,10 +11,15 @@ public class Snot : MonoBehaviour {
     public float speed;
     public float maxDist;
     float currentDist;
+
+    // Audio
+    public AudioClip[] clips;
+    public AudioSource sneezingClips;
+
     #endregion
     // Use this for initialization
     void Start () {
-		
+        sneezingClips = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -37,6 +42,10 @@ public class Snot : MonoBehaviour {
     {
         currentDist = 0;
         snotDir = direction;
+
+        // Plays random sneezing sound
+        int i = Random.Range(0, clips.Length);
+        sneezingClips.PlayOneShot(clips[2]);
     }
 
     private void OnTriggerEnter(Collider other)

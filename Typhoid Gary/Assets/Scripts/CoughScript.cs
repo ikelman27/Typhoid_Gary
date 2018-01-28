@@ -1,23 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 using UnityEngine;
 
 public class CoughScript : MonoBehaviour {
 
 
     #region vars
+
     float timeStamp;
     public GameObject player;
     public ParticleSystem cough;
-   
+
+    // Audio
+    public AudioClip[] clips;
+    public AudioSource coughingClips;
+
     #endregion
     // Use this for initialization
     void Start () {
-	    
-	}
+
+    }
 
     private void OnEnable()
     {
+        // Plays random coughing sound
+        int i = Random.Range(0, clips.Length);
+        coughingClips.PlayOneShot(clips[i]);
+
         timeStamp = Time.time;
 
         cough.transform.position =player.transform.position;
@@ -28,13 +38,12 @@ public class CoughScript : MonoBehaviour {
         
 
         cough.Play();
-
     }
 
     // Update is called once per frame
     void Update () {
-        
-        if(timeStamp < Time.time - .1)
+
+        if (timeStamp < Time.time - .1)
         {
             gameObject.SetActive(false);
         }
