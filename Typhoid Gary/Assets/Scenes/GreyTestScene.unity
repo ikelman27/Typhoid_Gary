@@ -8714,8 +8714,11 @@ RectTransform:
   - {fileID: 168030602}
   - {fileID: 2088030687}
   - {fileID: 1950286136}
+  - {fileID: 1937809054}
+  - {fileID: 1855336149}
   - {fileID: 1838608552}
   - {fileID: 1688211381}
+  - {fileID: 1463369490}
   - {fileID: 1455528843}
   - {fileID: 1439381768}
   - {fileID: 1428040170}
@@ -8732,9 +8735,6 @@ RectTransform:
   - {fileID: 207706798}
   - {fileID: 197768903}
   - {fileID: 197188119}
-  - {fileID: 1463369490}
-  - {fileID: 1855336149}
-  - {fileID: 1937809054}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14464,12 +14464,12 @@ Prefab:
         type: 2}
       propertyPath: moveToTargets.Array.data[0]
       value: 
-      objectReference: {fileID: 342861372}
+      objectReference: {fileID: 555270481}
     - target: {fileID: 114285138232468992, guid: e48d2aa2361193c4d8799122253e0c6b,
         type: 2}
       propertyPath: moveToTargets.Array.data[1]
       value: 
-      objectReference: {fileID: 777308765}
+      objectReference: {fileID: 2086086653}
     - target: {fileID: 114285138232468992, guid: e48d2aa2361193c4d8799122253e0c6b,
         type: 2}
       propertyPath: moveToTargets.Array.data[2]
