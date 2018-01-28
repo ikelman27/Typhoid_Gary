@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ChangingBar : MonoBehaviour {
 
     //stuff relating to the cooldownbar
+    public GameObject player;
     public float totalBar;//total max value out of
     private float currVal = 0;//the current value 
     public GameObject barVal;//the actual changing bar object
@@ -33,6 +34,12 @@ public class ChangingBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (Input.GetMouseButtonDown(1) && !coughIsCD)
+        {
+            ActivatCoughCD();
+        }
+        if (Input.GetMouseButtonDown(0) && !sneezeIsCD)
+            ActivateSneezeCD();
         if(coughIsCD)
         {
             coughImg.fillAmount += 1 / coughCD * Time.deltaTime;

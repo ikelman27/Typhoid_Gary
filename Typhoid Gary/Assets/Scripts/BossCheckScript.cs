@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor.SceneManagement;
 public class BossCheckScript : MonoBehaviour {
 
    
@@ -18,11 +17,8 @@ public class BossCheckScript : MonoBehaviour {
 	void Update () {
 	    if(bossInRoom && youInRoom)
         {
-            Debug.Log("you got cought");
             SceneManager.LoadScene("YouGotCaught");
         }
-        Debug.Log("boss in room: " + bossInRoom);
-        Debug.Log("You in room: " + youInRoom);
 	}
 
     private void OnTriggerEnter(Collider other)

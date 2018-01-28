@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4383178258655314}
   - component: {fileID: 114073522986706618}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GameManager
   m_TagString: GameManager
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1522842084917766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 215.02936, y: 511.75363, z: 2.6026945}
+  m_LocalPosition: {x: 207.43, y: 511.75363, z: 2.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,12 +51,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b87862e67891bb94d9f61de4b6dacb1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   totalBar: 100
   barVal: {fileID: 0}
   increaseVal: 50
+  enemies: []
   sneezImg: {fileID: 0}
   coughImg: {fileID: 0}
-  snzCD: 5
-  coughCD: 3
+  snzCD: 1
+  coughCD: 1
   coughIsCD: 0
   sneezeIsCD: 0
