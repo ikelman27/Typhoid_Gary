@@ -98,7 +98,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23b613d9b8ee814199f848b3b7fb843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveToTargets: []
+  moveToTargets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tarDistance: 0
   randMin: 0
   randMax: 0

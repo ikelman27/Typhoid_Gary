@@ -6,7 +6,7 @@ public class PlayerControler : MonoBehaviour
 {
 
     #region variables
-    private float speed;
+    public float speed = 5;
     private Vector3 position;
     private GameObject player;
     Vector2 cameraPos;
@@ -18,9 +18,10 @@ public class PlayerControler : MonoBehaviour
     float snezeTimeStamp;
      float coughTimeStamp;
     public float coughCooldownTime;
-
+    private Rigidbody rigid;
     public GameObject coughCone;
     #endregion
+
 
 
     // Use this for initialization
@@ -31,14 +32,14 @@ public class PlayerControler : MonoBehaviour
         position = player.transform.position;
         snot.SetActive(false);
         snezeTimeStamp = snezeCooldownTime + Time.time;
-
+        rigid = player.GetComponent<Rigidbody>();
     }
 
 
     // Update is called once per frame
     void Update()
     {
-
+        /**
         if (Input.GetKey("a"))
         {
             position.x -= .1f;
@@ -61,7 +62,7 @@ public class PlayerControler : MonoBehaviour
             position.z -= .1f;
 
         }
-
+        **/
 
         cameraPos = Camera.main.WorldToViewportPoint(transform.position);
         mousePos = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
@@ -82,14 +83,38 @@ public class PlayerControler : MonoBehaviour
         {
             //coughCone.SetActive(false);
         }
-            movePlayer();
+
+
+        movePlayer();
+        //position = transform.position;
     }
 
 
     void movePlayer()
     {
         player.transform.rotation = Quaternion.Euler(new Vector3(0f, -angle, 0f));
-        player.transform.position = position;
+
+        if(Input.GetKey(KeyCode.W)){
+            player.transform.Translate(Vector3.forward * Time.deltaTime * speed, Space.World);
+            //rigid.AddForce(Vector3.forward * Time.deltaTime * speed);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            player.transform.Translate(Vector3.left * Time.deltaTime * speed, Space.World);
+
+
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            player.transform.Translate(Vector3.back * Time.deltaTime * speed, Space.World);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            player.transform.Translate(Vector3.right * Time.deltaTime * speed, Space.World);
+        }
+
+        //player.transform.Translate(position);
+        //player.transform.position = new Vector3(player.transform.position.x, .1f, player.transform.position.z);
     }
 
 

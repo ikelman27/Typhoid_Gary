@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33812430387964312}
   - component: {fileID: 65212477947020802}
   - component: {fileID: 23412536485409040}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 33263552905418324}
   - component: {fileID: 136606806999307498}
   - component: {fileID: 23691007264409556}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 23909104866635226}
   - component: {fileID: 114976259938490696}
   - component: {fileID: 65931053135120986}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube
   m_TagString: SickPoint
   m_Icon: {fileID: 0}
