@@ -55,7 +55,7 @@ public class CoughScript : MonoBehaviour {
 
             //Debug.Log("Other: " + other.gameObject.name);
 
-            //if (!Physics.Raycast(player.transform.position, other.transform.position - player.transform.position, out hit, Vector3.Magnitude(other.transform.position - player.transform.position)))
+            if (!Physics.Raycast(player.transform.position, other.transform.position - player.transform.position, out hit, Vector3.Magnitude(other.transform.position - player.transform.position)-other.GetComponent<CapsuleCollider>().radius ))
             {
                 Debug.Log("TAG: " + other.gameObject.tag);
                 Debug.Log("NAME: " + other.gameObject.name);
@@ -66,7 +66,7 @@ public class CoughScript : MonoBehaviour {
                     other.GetComponent<InfectScript>().infectPerson();
                 }
             }
-            //Debug.Log("HIT: " + hit.transform.gameObject.name);
+            Debug.Log("HIT: " + hit.transform.gameObject.name);
         }
       
       

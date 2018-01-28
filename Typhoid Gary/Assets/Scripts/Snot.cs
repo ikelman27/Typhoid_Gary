@@ -47,6 +47,13 @@ public class Snot : MonoBehaviour {
             {
                 other.GetComponent<InfectScript>().infectObject();
             }
+            if (other.gameObject.tag == "Player"  || other.gameObject.tag == "Sensor")
+            {
+
+            }
+            else
+                gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
         else if (other.gameObject.layer == 1)
         {
