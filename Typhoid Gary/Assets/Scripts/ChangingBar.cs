@@ -61,12 +61,13 @@ public class ChangingBar : MonoBehaviour {
 
         if (winGame())
         {
-            //SceneManager.LoadScene(1);
+            SceneManager.LoadScene("WinScene");
             Debug.Log("you win");
         }
         if(currVal >= 100)
         {
             Debug.Log("you Lose");
+            SceneManager.LoadScene("GameOverScreen");
         }
 		
 	}

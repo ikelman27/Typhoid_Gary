@@ -5857,7 +5857,7 @@ Prefab:
         type: 2}
       propertyPath: moveToTargets.Array.data[3]
       value: 
-      objectReference: {fileID: 777308765}
+      objectReference: {fileID: 555270481}
     - target: {fileID: 1112205313813342, guid: e48d2aa2361193c4d8799122253e0c6b, type: 2}
       propertyPath: m_Name
       value: Person_Sensor (8)
@@ -5875,7 +5875,7 @@ Prefab:
         type: 2}
       propertyPath: moveToTargets.Array.data[4]
       value: 
-      objectReference: {fileID: 777308765}
+      objectReference: {fileID: 555270481}
     - target: {fileID: 114285138232468992, guid: e48d2aa2361193c4d8799122253e0c6b,
         type: 2}
       propertyPath: moveToTargets.Array.data[5]
@@ -7672,7 +7672,7 @@ Prefab:
         type: 2}
       propertyPath: moveToTargets.Array.data[4]
       value: 
-      objectReference: {fileID: 777308765}
+      objectReference: {fileID: 381631031}
     - target: {fileID: 114285138232468992, guid: e48d2aa2361193c4d8799122253e0c6b,
         type: 2}
       propertyPath: moveToTargets.Array.data[5]
@@ -8006,7 +8006,7 @@ Prefab:
         type: 2}
       propertyPath: moveToTargets.Array.data[4]
       value: 
-      objectReference: {fileID: 115565244}
+      objectReference: {fileID: 206313978}
     - target: {fileID: 114285138232468992, guid: e48d2aa2361193c4d8799122253e0c6b,
         type: 2}
       propertyPath: moveToTargets.Array.data[5]
@@ -13692,8 +13692,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1812763134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42.289, y: 0, z: 4.831}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 42.289, y: -2.23, z: 4.831}
+  m_LocalScale: {x: 1, y: 0.45009303, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
