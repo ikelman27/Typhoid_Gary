@@ -33,6 +33,9 @@ public class StupidScript : MonoBehaviour {
 
     }
 
+
+    // Earlier used for testing purposes
+    /*
     // If an event happens within the trigger area, the senses are activated
     private void OnTriggerStay(Collider collision)
     {
@@ -56,5 +59,5 @@ public class StupidScript : MonoBehaviour {
             collision.gameObject.GetComponent<SensoryScript>().Hearing = false;
             collision.gameObject.GetComponent<SensoryScript>().Seeing = false;
         }
-    }
+    }*/
 }

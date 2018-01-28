@@ -7,6 +7,9 @@ TagManager:
   - Sensor
   - Object
   - Enemy
+  - SickPoint
+  - Infection
+  - GameManager
   layers:
   - Default
   - TransparentFX
