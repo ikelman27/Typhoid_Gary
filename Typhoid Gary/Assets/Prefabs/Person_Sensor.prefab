@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 114285138232468992}
   - component: {fileID: 195817048258988692}
   - component: {fileID: 114915705188723784}
-  - component: {fileID: 136644474051549098}
   m_Layer: 0
   m_Name: Person_Sensor
   m_TagString: Enemy
@@ -45,7 +44,7 @@ GameObject:
   - component: {fileID: 135734702999822806}
   - component: {fileID: 23717486210547026}
   - component: {fileID: 114813367856135550}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Hearing Sphere
   m_TagString: Sensor
   m_Icon: {fileID: 0}
@@ -92,8 +91,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1793322116335144}
   m_LocalRotation: {x: -0, y: -0.7466016, z: 0.66527146, w: 0}
-  m_LocalPosition: {x: 0, y: 0.592, z: 1.561}
-  m_LocalScale: {x: 234.83203, y: 142.88443, z: 98.3475}
+  m_LocalPosition: {x: 0, y: 0.47, z: 2.67}
+  m_LocalScale: {x: 378.368, y: 288.648, z: 209.7}
   m_Children: []
   m_Father: {fileID: 4706147716505672}
   m_RootOrder: 0
@@ -294,6 +293,7 @@ MonoBehaviour:
   isSight: 1
   isHearing: 0
   findTag: Player
+  personType: 0
 --- !u!114 &114813367856135550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -308,6 +308,7 @@ MonoBehaviour:
   isSight: 0
   isHearing: 1
   findTag: Player
+  personType: 0
 --- !u!114 &114915705188723784
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -348,19 +349,6 @@ SphereCollider:
   m_Radius: 0.010000004
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136351896040311812
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1112205313813342}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136644474051549098
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

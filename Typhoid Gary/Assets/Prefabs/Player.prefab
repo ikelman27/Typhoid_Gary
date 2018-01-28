@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65531983907031902}
   - component: {fileID: 23362825995530488}
   - component: {fileID: 114339501960645122}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,10 +229,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8fa7a69e3168a14f896bdf2e43a5b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
   snot: {fileID: 0}
   snezeCooldownTime: 1
   coughCooldownTime: 1
   coughCone: {fileID: 1358513237576770}
+  clicked: 0
 --- !u!114 &114454051727804136
 MonoBehaviour:
   m_ObjectHideFlags: 1

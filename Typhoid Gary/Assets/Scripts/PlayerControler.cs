@@ -144,30 +144,4 @@ public class PlayerControler : MonoBehaviour
         }
         
     }
-
-
-    // If an event happens within the trigger area, the senses are activated
-    private void OnTriggerStay(Collider collision)
-    {
-        if (collision.gameObject.tag == "Sensor")
-        {
-            if (clicked)
-            {
-                if (collision.gameObject.GetComponent<SensoryScript>().isHearing)
-                    collision.gameObject.GetComponent<SensoryScript>().Hearing = true;
-                else
-                    collision.gameObject.GetComponent<SensoryScript>().Seeing = true;
-            }
-        }
-    }
-
-    // Senses are disabled upon leaving trigger area
-    private void OnTriggerExit(Collider collision)
-    {
-        if (collision.gameObject.tag == "Sensor")
-        {
-            collision.gameObject.GetComponent<SensoryScript>().Hearing = false;
-            collision.gameObject.GetComponent<SensoryScript>().Seeing = false;
-        }
-    }
 }

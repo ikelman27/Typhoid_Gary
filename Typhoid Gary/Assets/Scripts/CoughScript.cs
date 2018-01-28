@@ -42,26 +42,29 @@ public class CoughScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other)
+        if (other.gameObject.layer == 0)
         {
-            RaycastHit hit;
-
-            Debug.Log("Other:" + other.gameObject.name);
-            Debug.DrawLine(player.transform.position, other.transform.position);
-            if (!Physics.Raycast(player.transform.position, other.transform.position - player.transform.position,  out hit, Vector3.Magnitude(other.transform.position - player.transform.position)));
+            if (other)
             {
-                Debug.Log("Found something with raycast");
+                RaycastHit hit;
+
+                Debug.Log("Other:" + other.gameObject.name);
                 Debug.DrawLine(player.transform.position, other.transform.position);
-                if (other.gameObject.tag == "Enemy")
+                if (!Physics.Raycast(player.transform.position, other.transform.position - player.transform.position, out hit, Vector3.Magnitude(other.transform.position - player.transform.position))) ;
                 {
-                    other.GetComponent<InfectScript>().infectPerson();
+                    Debug.Log("Found something with raycast");
+                    Debug.DrawLine(player.transform.position, other.transform.position);
+                    if (other.gameObject.tag == "Enemy")
+                    {
+                        other.GetComponent<InfectScript>().infectPerson();
+                    }
+                    if (other.gameObject.tag == "SickPoint")
+                    {
+                        other.GetComponent<InfectScript>().infectObject();
+                    }
                 }
-                if (other.gameObject.tag == "SickPoint")
-                {
-                    other.GetComponent<InfectScript>().infectObject();
-                }
+                //Debug.Log("hit:" + hit.transform.gameObject.name);
             }
-            //Debug.Log("hit:" + hit.transform.gameObject.name);
         }
       
       
