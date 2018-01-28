@@ -1674,7 +1674,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1365566494741730, guid: dd1d6579983258b4799721de89c48da3, type: 2}
       propertyPath: m_Name
-      value: 
+      value: Water Cooler
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd1d6579983258b4799721de89c48da3, type: 2}
@@ -5274,7 +5274,7 @@ GameObject:
   - component: {fileID: 697083244}
   - component: {fileID: 697083243}
   m_Layer: 2
-  m_Name: 
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5616,6 +5616,26 @@ Transform:
   m_PrefabParentObject: {fileID: 4655023819355896, guid: e57cbf5804ae96747af319d6d3a939ba,
     type: 2}
   m_PrefabInternal: {fileID: 847071444}
+--- !u!1 &757815455 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1112205313813342, guid: e48d2aa2361193c4d8799122253e0c6b,
+    type: 2}
+  m_PrefabInternal: {fileID: 197188118}
+--- !u!54 &757815462
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 757815455}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &777308763
 Prefab:
   m_ObjectHideFlags: 0
@@ -6608,7 +6628,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1365566494741730, guid: dd1d6579983258b4799721de89c48da3, type: 2}
       propertyPath: m_Name
-      value: 
+      value: Water Cooler
       objectReference: {fileID: 0}
     - target: {fileID: 1365566494741730, guid: dd1d6579983258b4799721de89c48da3, type: 2}
       propertyPath: m_Layer
@@ -8762,7 +8782,7 @@ GameObject:
   - component: {fileID: 1236166037}
   - component: {fileID: 1236166036}
   - component: {fileID: 1236166035}
-  m_Layer: 1
+  m_Layer: 2
   m_Name: Vision Cone
   m_TagString: Sensor
   m_Icon: {fileID: 0}
@@ -10610,7 +10630,7 @@ GameObject:
   - component: {fileID: 1442049651}
   - component: {fileID: 1442049650}
   m_Layer: 2
-  m_Name: 
+  m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11219,7 +11239,7 @@ GameObject:
   - component: {fileID: 1565773738}
   - component: {fileID: 1565773737}
   - component: {fileID: 1565773736}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Hearing Sphere
   m_TagString: Sensor
   m_Icon: {fileID: 0}
@@ -12561,6 +12581,59 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e57cbf5804ae96747af319d6d3a939ba, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1812763134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1812763136}
+  - component: {fileID: 1812763135}
+  - component: {fileID: 1812763137}
+  m_Layer: 0
+  m_Name: BossRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1812763135
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1812763134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.972946, y: 4.328644, z: 17.58382}
+  m_Center: {x: -5.6668053, y: 1.6643219, z: 7.950632}
+--- !u!4 &1812763136
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1812763134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.289, y: 0, z: 4.831}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1812763137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1812763134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f2e16914c63a3a4e9bd63f1b07abb68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1813240413 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224863000096686372, guid: dc7a5799383283640a5ea9e7e8215c48,
@@ -13159,7 +13232,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1365566494741730, guid: dd1d6579983258b4799721de89c48da3, type: 2}
       propertyPath: m_Name
-      value: 
+      value: Water Cooler
       objectReference: {fileID: 0}
     - target: {fileID: 1365566494741730, guid: dd1d6579983258b4799721de89c48da3, type: 2}
       propertyPath: m_Layer
@@ -13618,7 +13691,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4383178258655314, guid: 852263d29885c4b4a8c6dc351e89327b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 215.02936
+      value: 207.43
       objectReference: {fileID: 0}
     - target: {fileID: 4383178258655314, guid: 852263d29885c4b4a8c6dc351e89327b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -13626,7 +13699,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4383178258655314, guid: 852263d29885c4b4a8c6dc351e89327b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.6026945
+      value: 2.17
       objectReference: {fileID: 0}
     - target: {fileID: 4383178258655314, guid: 852263d29885c4b4a8c6dc351e89327b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -13669,7 +13742,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1522842084917766, guid: 852263d29885c4b4a8c6dc351e89327b, type: 2}
       propertyPath: m_Name
-      value: 
+      value: CanvasManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 852263d29885c4b4a8c6dc351e89327b, type: 2}
