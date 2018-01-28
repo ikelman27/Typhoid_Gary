@@ -23,7 +23,6 @@ public class PlayerControler : MonoBehaviour
     #endregion
 
     #region enemyDectVars
-    public GameObject box;
     public bool clicked;
     #endregion
 
